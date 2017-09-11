@@ -1,5 +1,8 @@
 # puppeteer docker image support japanese font
 
+[![](https://images.microbadger.com/badges/version/orangesys/docker-puppeteer.svg)](https://microbadger.com/images/orangesys/docker-puppeteer "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/orangesys/docker-puppeteer.svg)](https://microbadger.com/images/orangesys/docker-puppeteer "Get your own image badge on microbadger.com")
+
 docker image with  [Google Puppeteer](https://github.com/GoogleChrome/puppeteer) installed
 
 base is [alekzonder/docker-puppeteer](https://github.com/alekzonder/docker-puppeteer)
