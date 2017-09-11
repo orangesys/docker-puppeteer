@@ -3,7 +3,7 @@ MAINTAINER "gavin zhou" <gavin.zhou@gmail.com>
 
 ENV PUPPETEER_VERSION=0.10.2
 
-ADD https://noto-website.storage.googleapis.com/pkgs/NotoSansCJKjp-hinted.zip /tmp/noto
+ADD https://noto-website.storage.googleapis.com/pkgs/NotoSansCJKjp-hinted.zip /tmp/
 
 RUN set -ex && \
   apt-get update && \
@@ -14,9 +14,9 @@ RUN set -ex && \
   ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget unzip && \
   yarn global add puppeteer@${PUPPETEER_VERSION} && yarn cache clean && \
   mkdir -p /usr/share/fonts/noto && \
-  cd /tmp/noto && unzip NotoSansCJKjp-hinted.zip && cp *.otf /usr/share/fonts/noto && \
+  cd /tmp/ && unzip NotoSansCJKjp-hinted.zip && cp *.otf /usr/share/fonts/noto && \
   chmod 644 -R /usr/share/fonts/noto/ && \
-  /usr/bin/fc-cache -fv && rm -rf /tmp/noto && \
+  /usr/bin/fc-cache -fv && rm -rf /tmp/* && \
   apt-get clean && apt-get autoremove -y && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
 ENV NODE_PATH="/usr/local/share/.config/yarn/global/node_modules:${NODE_PATH}"
