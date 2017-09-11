@@ -8,7 +8,7 @@ add NotoSansCJKjp font.
 
 ## docker tags
 
-- [v0.10.2](!https://github.com/orangesys/docker-puppeteer/tree/v0.10.2)
+- [v0.10.2](https://github.com/orangesys/docker-puppeteer/tree/v0.10.2)
 
 ## install
 
