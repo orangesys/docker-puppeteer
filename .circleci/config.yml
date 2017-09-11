@@ -65,7 +65,7 @@ jobs:
           command: |
             docker login -u $DOCKER_USER -p $DOCKER_PASS
             docker push orangesys/${CIRCLE_PROJECT_REPONAME}:${CIRCLE_TAG}
-
+            curl -XPOST https://hooks.microbadger.com/images/orangesys/docker-puppeteer/4Fnp4VofITz8AioiO5CwiQfhnOM=
 workflows:
   version: 2
   build-and-deploy:
